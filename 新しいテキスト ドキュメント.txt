@@ -1,0 +1,66 @@
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~
+$ git config --global user.name "ShomaMori"
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~
+$ git config --global user.email mori.shoma817@mail.kyutech.jp
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~
+$ cd desktop
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop
+$ ls
+ desktop.ini  'Microsoft Edge.lnk'*  'Microsoft Teams.lnk'*   zemi/
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop
+$ cd zemi
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop/zemi
+$ git init
+Initialized empty Git repository in C:/Users/Shoma Mori/Desktop/zemi/.git/
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop/zemi (master)
+$  git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop/zemi (master)
+$ git remote add origin https://github.com/ShomaMori/kikaigakushu.git
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop/zemi (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop/zemi (master)
+$ git add .
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop/zemi (master)
+$ git commit -m "kikaigakushu"
+[master (root-commit) 8455161] kikaigakushu
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 zemi.pptx
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop/zemi (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 34.58 KiB | 17.29 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ShomaMori/kikaigakushu.git
+ * [new branch]      master -> master
+
+Shoma Mori@DESKTOP-VDH8PGJ MINGW64 ~/desktop/zemi (master)
+$
+
