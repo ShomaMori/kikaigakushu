@@ -12,7 +12,7 @@ import mglearn
 from IPython.display import display
 from sklearn.neighbors import KNeighborsClassifier
 
-#K=1
+#K=1データはwave
 mglearn.plots.plot_knn_regression(n_neighbors=1)
 
 #K=3

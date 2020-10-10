@@ -31,16 +31,16 @@ plt.ylabel("Target")
 plt.title("wave")
 plt.show()
 
-#
+#cancerデータセット
 from sklearn.datasets import load_breast_cancer
 cancer = load_breast_cancer()
 
 
-#In[7]
+#ボストンデータセット
 from sklearn.datasets import load_boston
 boston = load_boston()
 
 
-#拡張ボストンデータ
+#拡張ボストンデータセット
 #特徴量の積も特徴量としている
 exboston = mglearn.datasets.load_extended_boston()

@@ -10,25 +10,19 @@ import pandas as pd
 import mglearn
 from IPython.display import display
 
-#K=1
+
+#K=1データはforge
 mglearn.plots.plot_knn_classification(n_neighbors=1)
 plt.show()
 
-#K=9
+#K=3
 mglearn.plots.plot_knn_classification(n_neighbors=3)
 plt.show()
 
-#データを訓練セットとテストセットに分割
-from sklearn.model_selection import train_test_split
+#境界分けをしてプロット
 X,y = mglearn.datasets.make_forge()
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 0)
-#K=3でテスト制度を算出
 from sklearn.neighbors import KNeighborsClassifier
 clf = KNeighborsClassifier(n_neighbors = 3)
-clf.fit(X_train, y_train)
-
-
-#境界分けをしてプロット
 fig, axes = plt.subplots(1, 3, figsize=(10, 3))
 for n_neighbors, ax in zip([1, 3, 9], axes):
     #fitメソッドは自分自身を返すので1行で
@@ -51,7 +45,6 @@ from sklearn.model_selection import train_test_split
 X,y = mglearn.datasets.make_forge()
 X_train, X_test, y_train, y_test = train_test_split(
     cancer.data, cancer.target, stratify=cancer.target, random_state = 66)
-
 training_accuracy = []
 test_accuracy = []
 #n_neighborを1から10まで試す

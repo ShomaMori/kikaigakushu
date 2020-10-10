@@ -11,7 +11,7 @@ import pandas as pd
 import mglearn
 from IPython.display import display
 
-#frogeデータに対してロジスティック回帰とLinearSVMを行う
+#forgeデータに対してロジスティック回帰とLinearSVMを行う
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
 X, y = mglearn.datasets.make_forge()
@@ -49,7 +49,6 @@ logreg100 = LogisticRegression(C=100, solver='liblinear').fit(X_train, y_train)
 print("C=100")
 print("Training set score: {:.3f}".format(logreg100.score(X_train, y_train)))
 print("Test set score: {:.3f}".format(logreg100.score(X_test, y_test))+"\n")
-
 #C=0.01
 logreg001 = LogisticRegression(C=0.01, solver='liblinear').fit(X_train, y_train)
 print("C=0.01")
